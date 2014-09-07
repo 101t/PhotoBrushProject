@@ -1,0 +1,811 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AForge.Imaging.Blob" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAACAACAAgAAAAAIAAAACEAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Blob.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.BlobCounter" Collapsed="true">
+    <Position X="19.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAEAAAAJAAAAAAAAAAAAAIAIAAAAAABAAAAAAA=</HashCode>
+      <FileName>BlobCounter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.RGB" Collapsed="true">
+    <Position X="18" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAiBEAAQA=</HashCode>
+      <FileName>ColorConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.HSL" Collapsed="true">
+    <Position X="19.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ColorConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.YCbCr" Collapsed="true">
+    <Position X="21.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAgIAAAAAAAAAAAACAAAAAACAIAA=</HashCode>
+      <FileName>ColorConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.ColorConverter" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgCAEAAAAAAAIAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>ColorConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.ComplexImage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAAAAABAAAAAQAQAAAAUQAAAAAAAAAAIAQgAAAABA=</HashCode>
+      <FileName>ComplexImage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Image" Collapsed="true">
+    <Position X="26.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAhA=</HashCode>
+      <FileName>Image.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.ImageStatistics" Collapsed="true">
+    <Position X="28.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQBGAABABAgAQgEAEAIIQAgAIAABIAAAAAABADAAAgA=</HashCode>
+      <FileName>ImageStatistics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.ImageStatisticsHSL" Collapsed="true">
+    <Position X="14.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAEAAAAAGAEAEAgAgBIABAAAAAAAABAAAAAAQ=</HashCode>
+      <FileName>ImageStatisticsHSL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.ImageStatisticsYCbCr" Collapsed="true">
+    <Position X="16.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAABAAAAEAEAIAAAgAIACgAAACQEEBAAAEoAA=</HashCode>
+      <FileName>ImageStatisticsYCbCr.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.Interpolation" Collapsed="true">
+    <Position X="18" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Interpolation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.HoughLine" Collapsed="true">
+    <Position X="18" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAQA=</HashCode>
+      <FileName>LineHoughTransform.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.LineHoughTransform" Collapsed="true">
+    <Position X="28.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAQAAAAAAACAAAAAAAAAAAABAAAAAABAghgAAAAEg=</HashCode>
+      <FileName>LineHoughTransform.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.Win32" Collapsed="true">
+    <Position X="18" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Win32.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.Filters.TestFilter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\_Purgatory_\TestFilter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Add" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAABAAAAAAAAAACAAAAAAAAAAAAAgAQAgIAAA=</HashCode>
+      <FileName>Filters\2 Source filter\Add.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Difference" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAACAAAAAAAAAAAAAgAQAAIAAA=</HashCode>
+      <FileName>Filters\2 Source filter\Difference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Intersect" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAABAAAAAAAAAACAAAAAAAAAAAAAgAQAgIAAA=</HashCode>
+      <FileName>Filters\2 Source filter\Intersect.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Merge" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAABAAAAAAAAAACAAAAAAAAAAAAAgAQAgIAAA=</HashCode>
+      <FileName>Filters\2 Source filter\Merge.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Morph" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAACAAAAAAAAAAIAAgASAAIAAA=</HashCode>
+      <FileName>Filters\2 Source filter\Morph.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.MoveTowards" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAJAAAAAAAAAACAAAAAAAAAAAAAgAQAAIAAA=</HashCode>
+      <FileName>Filters\2 Source filter\MoveTowards.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Subtract" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAABAAAAAAAAAACAAAAAAAAAAAAAgAQAgIAAA=</HashCode>
+      <FileName>Filters\2 Source filter\Subtract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.SISThreshold" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAA=</HashCode>
+      <FileName>Filters\Adaptive Binarization\SISThreshold.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.BayerDithering" Collapsed="true">
+    <Position X="8.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Binarization Filters\BayerDithering.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.Filters.BurkesDithering" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Binarization Filters\BurkesDithering.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.Filters.ErrorDiffusionDithering" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAACAQAUgAAAAAAAAAAAAAAAAFgAAAAAAA=</HashCode>
+      <FileName>Filters\Binarization Filters\ErrorDiffusionDithering.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.FloydSteinbergDithering" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Binarization Filters\FloydSteinbergDithering.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.Filters.JarvisJudiceNinkeDithering" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Filters\Binarization Filters\JarvisJudiceNinkeDithering.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.Filters.OrderedDithering" Collapsed="true">
+    <Position X="8.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAABAACAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Binarization Filters\OrderedDithering.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.SierraDithering" Collapsed="true">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Filters\Binarization Filters\SierraDithering.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.Filters.StevensonArceDithering" Collapsed="true">
+    <Position X="12" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAgAAAAAAAAAIAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Filters\Binarization Filters\StevensonArceDithering.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.Filters.StuckiDithering" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Filters\Binarization Filters\StuckiDithering.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Threshold" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAABAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Binarization Filters\Threshold.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.ThresholdCarry" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Binarization Filters\ThresholdCarry.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.ChannelFiltering" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FoADACAIABBAAgAEQgKAKCAAAIAAAACAAAAASBAAAgA=</HashCode>
+      <FileName>Filters\Color Filters\ChannelFiltering.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.ColorFiltering" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAIABAAAgAEAAIASAAAAEAAAAAAAAAASBgAAgA=</HashCode>
+      <FileName>Filters\Color Filters\ColorFiltering.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.EuclideanColorFiltering" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgIAQAACBAAAAAAAAAACAAAQAAAAAAAAAgAQAgAAAE=</HashCode>
+      <FileName>Filters\Color Filters\EuclideanColorFiltering.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.ExtractChannel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgABAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Color Filters\ExtractChannel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.GammaCorrection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAABAAAABAAAAACAAAAAAAAAAAAAAAQAABAAA=</HashCode>
+      <FileName>Filters\Color Filters\GammaCorrection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Grayscale" Collapsed="true">
+    <Position X="2.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAgEAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Color Filters\Grayscale.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.GrayscaleBT709">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Color Filters\GrayscaleBT709.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.Filters.GrayscaleRMY">
+    <Position X="5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Color Filters\GrayscaleRMY.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.Filters.GrayscaleToRGB" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Color Filters\GrayscaleToRGB.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.GrayscaleY">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Color Filters\GrayscaleY.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Invert" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAACAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Filters\Color Filters\Invert.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.ReplaceChannel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgABAAIAAAAAAADAAAAAQAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Filters\Color Filters\ReplaceChannel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.RotateChannels" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAACAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Filters\Color Filters\RotateChannels.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Sepia" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAACAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Filters\Color Filters\Sepia.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Blur" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Convolution and Correlation\Blur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Convolution" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Convolution and Correlation\Convolution.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Correlation" Collapsed="true">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Filters\Convolution and Correlation\Correlation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Edges" Collapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Convolution and Correlation\Edges.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.Filters.GaussianBlur" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAgAAAAIAAEAAAABAAAAAQAQAAAAAAAAA=</HashCode>
+      <FileName>Filters\Convolution and Correlation\GaussianBlur.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Mean" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Convolution and Correlation\Mean.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Sharpen" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Convolution and Correlation\Sharpen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AForge.Imaging.Filters.SharpenEx" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAgAAAAIAAEAAAABAAAAAQAQAAAAAAAAA=</HashCode>
+      <FileName>Filters\Convolution and Correlation\SharpenEx.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Crop" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAIAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Crop.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.CannyEdgeDetector" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAABAAABAMAQAAAAAAAAAAAAAAAAAAAAAkAAABIIA=</HashCode>
+      <FileName>Filters\Edge Detectors\CannyEdgeDetector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.DifferenceEdgeDetector" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Edge Detectors\DifferenceEdgeDetector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.HomogenityEdgeDetector" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Edge Detectors\HomogenityEdgeDetector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.SobelEdgeDetector" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAMAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Edge Detectors\SobelEdgeDetector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.FilterIterator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAEAAAgBAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\FilterIterator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.FiltersSequence" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAABAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\FiltersSequence.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.BrightnessCorrection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAABAAAEAAAAAAAAAAAAAAAAAAAQAAQAAAAAA=</HashCode>
+      <FileName>Filters\HSL Filters\BrightnessCorrection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.ContrastCorrection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAABAAQEAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Filters\HSL Filters\ContrastCorrection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.HSLFiltering" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAAQIggAEBAAAACAAACQyAAEAEAAAAIAAAAAQAgAAEA=</HashCode>
+      <FileName>Filters\HSL Filters\HSLFiltering.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.HSLLinear" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAABAEAAAAAAAgCAAAIAEAAgABAAIAQAAAAAA=</HashCode>
+      <FileName>Filters\HSL Filters\HSLLinear.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.HueModifier" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAgAABAAAAAAAAAACAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Filters\HSL Filters\HueModifier.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.SaturationCorrection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAABAAAEAAAAAAAAAAAAAAAAAAAQAAQAAAAAA=</HashCode>
+      <FileName>Filters\HSL Filters\SaturationCorrection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.LevelsLinear" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BABAgAAAQJIAAEACAgDIKAAAEAAUEAEAEBAAQAAAAAA=</HashCode>
+      <FileName>Filters\LevelsLinear.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.MaskedFilter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAYAAAAGCAAAAAgAA=</HashCode>
+      <FileName>Filters\MaskedFilter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Median" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAgAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Median.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Closing" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Filters\Morphology\Closing.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Dilatation" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAIQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Morphology\Dilatation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Erosion" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAIQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Morphology\Erosion.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.HitAndMiss" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAJAAAACAAIQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Morphology\HitAndMiss.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Opening" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Filters\Morphology\Opening.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.AdaptiveSmooth" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAABAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Other\AdaptiveSmooth.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.ConnectedComponentsLabeling" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAACAABAAgAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Filters\Other\ConnectedComponentsLabeling.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.ConservativeSmoothing" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAgAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Other\ConservativeSmoothing.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Jitter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAIAAAACBAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Filters\Other\Jitter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.OilPainting" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Filters\Other\OilPainting.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Pixellate" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAECAAABBgAAAAIAAAACAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Filters\Other\Pixellate.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Shrink" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Other\Shrink.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.SimpleSkeletonization" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAABAAIAIAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Filters\Other\SimpleSkeletonization.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.TexturedFilter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAABAAAAAAAAAAQAAAAEAAYgAABGIQAAQAAAA=</HashCode>
+      <FileName>Filters\Other\TexturedFilter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.TexturedMerge" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAABAAAAAAAAAACAAAAAAAAgAAAAoQQAAIAAA=</HashCode>
+      <FileName>Filters\Other\TexturedMerge.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Texturer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAABAAAAAAAAAASAAAAEAAAgAABAIQQAQAAAA=</HashCode>
+      <FileName>Filters\Other\Texturer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Resize" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAABAAACAAICAgAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Resize.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.Rotate" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAABAAACAAAAAgAAAAAAAAAAAACEAAAAhABAA=</HashCode>
+      <FileName>Filters\Rotate.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.YCbCrExtractChannel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgABAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\YCbCr Filters\YCbCrExtractChannel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.YCbCrFiltering" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAKAAAAAJQAgABAAgMASAAAAEAAgAgCAAAAQAgAIAA=</HashCode>
+      <FileName>Filters\YCbCr Filters\YCbCrFiltering.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.YCbCrLinear" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAABAAAAAgAAAAKAAAACAAKAAIACgASAAAACA=</HashCode>
+      <FileName>Filters\YCbCr Filters\YCbCrLinear.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Filters.YCbCrReplaceChannel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgABAAIAAAAAAADAAAAAQAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Filters\YCbCr Filters\YCbCrReplaceChannel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Textures.CloudsTexture" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIgAAAAABAAAAAAAAAAAAAAAAAAAAAABAEAAAAA=</HashCode>
+      <FileName>Textures\CloudsTexture.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Textures.LabyrinthTexture" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIgAAAAABAAAAAAAAAAAAAAAAAAAAAABAEAAAAA=</HashCode>
+      <FileName>Textures\LabyrinthTexture.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Textures.MarbleTexture" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAIgAAAAABAAAAAAAAAAAAAAAAAAAAAABAEAGAAA=</HashCode>
+      <FileName>Textures\MarbleTexture.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Textures.TextileTexture" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIgAAAAABAAAAAAAAAAAAAAAAAAAAAABAEAAAAA=</HashCode>
+      <FileName>Textures\TextileTexture.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AForge.Imaging.Textures.WoodTexture" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIgAAAAABCAAAAAAAAAAAAAAAAAAAAABAEAAAAA=</HashCode>
+      <FileName>Textures\WoodTexture.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="AForge.Imaging.Filters.IFilter" Collapsed="true">
+    <Position X="14.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\IFilter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AForge.Imaging.Filters.IInPlaceFilter" Collapsed="true">
+    <Position X="16.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Filters\IInPlaceFilter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AForge.Imaging.Textures.ITextureGenerator" Collapsed="true">
+    <Position X="18" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Textures\ITextureGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="AForge.Imaging.InterpolationMethod" Collapsed="true">
+    <Position X="16.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgCAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Interpolation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AForge.Imaging.Filters.HitAndMissMode">
+    <Position X="14.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAhAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Morphology\HitAndMiss.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,6 @@
+- Hough transform
+- Susan edge detector
+- Haar transform
+- Morphology: TopHat
+- Quadro tree
+- Wavelets

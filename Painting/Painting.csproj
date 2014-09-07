@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52DBC0DE-26B5-48DC-88D0-1AB610A43A4B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Painting</RootNamespace>
+    <AssemblyName>Painting</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Painter\ColorChangedEventArgs.cs" />
+    <Compile Include="Painter\ColorChooser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Painter\ColorHandler.cs" />
+    <Compile Include="Painter\ColorWheel.cs" />
+    <Compile Include="Painter\FormColorEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Painter\FormColorEditor.designer.cs">
+      <DependentUpon>FormColorEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painter\Painters.cs" />
+    <Compile Include="Painter\StateSettings.cs" />
+    <Compile Include="Shapes\DrawingCanvas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Shapes\DrawingCanvas.designer.cs">
+      <DependentUpon>DrawingCanvas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shapes\FormShapeProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shapes\FormShapeProperties.designer.cs">
+      <DependentUpon>FormShapeProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shapes\FormTextProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shapes\FormTextProperties.designer.cs">
+      <DependentUpon>FormTextProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shapes\FormSetImageProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shapes\FormSetImageProperties.designer.cs">
+      <DependentUpon>FormSetImageProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shapes\GDIGenerationHelper.cs" />
+    <Compile Include="Shapes\GDIGenerationTool.cs" />
+    <Compile Include="Shapes\GDIProperties.cs" />
+    <Compile Include="Shapes\Handle.cs" />
+    <Compile Include="Shapes\IRestoreNonSerializable.cs" />
+    <Compile Include="Shapes\Mathematics.cs" />
+    <Compile Include="Shapes\Shape.cs" />
+    <Compile Include="Shapes\ShapeCircle.cs" />
+    <Compile Include="Shapes\ShapeClipRectangle.cs" />
+    <Compile Include="Shapes\ShapeLine.cs" />
+    <Compile Include="Shapes\ShapeManager.cs" />
+    <Compile Include="Shapes\ShapePolygon.cs" />
+    <Compile Include="Shapes\ShapeRectangle.cs" />
+    <Compile Include="Shapes\ShapeText.cs" />
+    <Compile Include="Shapes\ShapeTriangle.cs" />
+    <Compile Include="Shapes\Tools.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Painter\ColorChooser.resx">
+      <DependentUpon>ColorChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painter\FormColorEditor.resx">
+      <DependentUpon>FormColorEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shapes\DrawingCanvas.resx">
+      <DependentUpon>DrawingCanvas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shapes\FormShapeProperties.resx">
+      <DependentUpon>FormShapeProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shapes\FormTextProperties.resx">
+      <DependentUpon>FormTextProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shapes\FormSetImageProperties.resx">
+      <DependentUpon>FormSetImageProperties.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

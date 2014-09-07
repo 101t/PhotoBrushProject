@@ -1,0 +1,110 @@
+[13.06.2006] - Version 2.3.0
+
++ [05.06.2006] - Morph filter created
++ [11.01.2006] - Canny edge detector bug fixed
++ [16.11.2005] - Textured merging of two images
++ [16.11.2005] - ImageStatistics splited into two classes (RGB and HSL),
+	YCbCr statistics added
++ [15.11.2005] - Channels linear correction of YCbCr color space
++ [11.11.2005] - Channels filtering of YCbCr color space
++ [11.11.2005] - Channel replacement of YCbCr color space
++ [11.11.2005] - Channel extractor of YCbCr color space
++ [10.11.2005] - RGB to YCbCr and YCbCr to RGB converters were added
++ [08.11.2005] - Textured Filter filter
++ [08.11.2005] - Texturer filter
++ [08.11.2005] - Clouds Texture generator added
++ [08.11.2005] - Labirinth Texture generator added
++ [08.11.2005] - Textile Texture generator added
++ [08.11.2005] - Wood Texture generator added
++ [08.11.2005] - Marble Texture generator added
++ [08.11.2005] - AForge.Imaging.Textures namespace added with ITextureGenerator interface
++ [02.11.2005] - IInPlaceFilter interface created (some filters are able to filter
+	the source image now)
++ [17.10.2005] - Pixellate filter modified to have PixelWidth and PixelHeight properties
+
+[20.09.2005] - Version 2.2.0
+
++ [19.09.2005] - Oil painting filter
++ [18.09.2005] - SharpenEx - extended sharpening filter based on Gaussian kernel
++ [13.09.2005] - Conservative smoothing
++ [09.09.2005] - Code review and refactoring
++ [06.09.2005] - Canny edge detector
++ [29.08.2005] - Gaussian filter renamed to GaussianBlur and extended with kernel
+	size and sigma properties
++ [23.08.2005] - SISThreshold (Threshold using Simple Image Statistics)
+
+[20.08.2005] - Version 2.1.0
+
++ [20.08.2005] - Crop filter
++ [20.08.2005] - Adaptive smoothing
++ [19.08.2005] - ConectedComponentsLabeling rewritten to use BlobCounter
++ [19.08.2005] - BlobCounter class (counting, getting objects rectangles, getting separate objects)
++ [19.08.2005] - Gaussian filter
++ [15.08.2005] - SobelEdgeDetector filter
++ [14.08.2005] - ConectedComponentsLabeling filter
++ [19.07.2005] - FiltersSequence constructor
+
+[12.07.2005] - Version 2.0.0
+
++ [12.07.2005] - LevelsLineas and ChannelFiltering filters optimization
++ [07.07.2005] - Homogenity and Difference edge detectors
++ [04.07.2005] - Lowpass, Hipass filters
++ [01.07.2005] - Fourier transformation
++ [27.06.2005] - the library becomes part of AForge namespace
+
+[20.06.2005] - Version 1.4.0
+
++ [08.06.2005] - HueModifier - modifies the hue value (it can be done using HSL filtering also)
++ [08.06.2005] - HSL filtering - filters pixel inside or outside specified HSL range
++ [07.06.2005] - saturation corrector based on HSLLinear class
++ [07.06.2005] - luminance linear correction class converted to HSLLinear, which allows
+					to correct not only luminance value, but saturation also
++ [07.06.2005] - FilterIterator - performs specified count of filter's iteration
++ [07.06.2005] - contrast correction based on luminance correction of HSL space
++ [07.06.2005] - brightness correction based on luminance correction of HSL space
++ [06.06.2005] - luminance linear correction using HSL color space
++ [06.06.2005] - ColorConverter class (RGB to HSL, HSL to RGB)
++ [06.06.2005] - gamma correction filter
++ [06.06.2005] - thinning operator from mathematical morphology
++ [06.06.2005] - thickening operator from mathematical morphology
++ [06.06.2005] - hit-and-miss operator from mathematical morphology
++ [23.04.2005] - dithering bugs was fixed
++ [05.04.2005] - abstract class ErrorDiffusionDithering for dithering methods
+					based on error diffusion
+
+[29.03.2005] - Version 1.3.0
+
++ [29.03.2005] - MaskedFilter
++ [29.03.2005] - Jitter filter
++ [29.03.2005] - Rotate filters (Nearest neighbor, Bilinear, Bicubic)
++ [27.03.2005] - Shrink filter
++ [27.03.2005] - Bicubic resizing
++ [27.03.2005] - Bilinear resizing
++ [24.03.2005] - Nearest Neighbour resizing
++ [24.03.2005] - Stucki Dithering
++ [24.03.2005] - Stevenson and Arce Dithering
++ [24.03.2005] - Sierra Dithering
++ [24.03.2005] - Jarvis, Judice and Ninke Dithering
++ [24.03.2005] - Burkes Dithering
++ [24.03.2005] - Bayer ordered dithering
++ [24.03.2005] - ThresholdMatrix replaced with more flexible OrderedDithering
+
+[20.03.2005] - Version 1.2.0
+
++ [17.03.2005] - Simple Skeletonization
++ [17.03.2005] - Channel extraction
++ [17.03.2005] - Histogram improvement
++ [17.03.2005] - ImageStatistics improvement
++ [17.03.2005] - Euclidean color filtering
++ [16.03.2005] - Color filtering
++ [16.03.2005] - Channels filter
++ [09.03.2005] - MoveTowards filter
++ [09.03.2005] - Pixellate filter
++ [07.03.2005] - FiltersSequence filter
++ [06.03.2005] - Difference filter
++ [06.03.2005] - Add filter
++ [06.03.2005] - Subtract filter
++ [06.03.2005] - Merge filter
++ [06.03.2005] - Intersect filter
+
+[03.03.2005] - Version 1.0.0

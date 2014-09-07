@@ -1,0 +1,231 @@
+<UserControl x:Class="DockingLibrary.Pane"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	AllowDrop="True"  PreviewDragEnter="OnDragEnter" PreviewDragLeave="OnDragLeave" PreviewDragOver="OnDragOver" Drop="OnDrop" Background="LightGray">
+	<UserControl.Resources>
+		<Style x:Key="DragPaneButtonStyle" TargetType="{x:Type Button}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Button}">
+						<Border Background="{TemplateBinding Background}"
+								BorderBrush="{TemplateBinding BorderBrush}"
+								BorderThickness="1">
+							<Image>
+								<Image.Source>
+									<DrawingImage>
+										<DrawingImage.Drawing>
+											<GeometryDrawing Brush="LightBlue">
+												<GeometryDrawing.Pen>
+													<Pen Brush="Black" Thickness="1"/>
+												</GeometryDrawing.Pen>
+												<GeometryDrawing.Geometry>
+													<GeometryGroup>
+														<RectangleGeometry Rect="0,0,20,20"/>
+														<PathGeometry>
+															<PathFigure IsClosed="True">
+																<LineSegment Point="10, 10"/>
+																<LineSegment Point="0, 20"/>
+															</PathFigure>
+														</PathGeometry>
+													</GeometryGroup>
+												</GeometryDrawing.Geometry>
+											</GeometryDrawing>
+
+										</DrawingImage.Drawing>
+									</DrawingImage>
+
+								</Image.Source>
+							</Image>
+						</Border>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<Style x:Key="DragIntoPaneButtonStyle" TargetType="{x:Type Button}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Button}">
+						<Border Background="{TemplateBinding Background}"
+								BorderBrush="{TemplateBinding BorderBrush}"
+								BorderThickness="1"
+									>
+							<Image>
+								<Image.Source>
+									<DrawingImage>
+										<DrawingImage.Drawing>
+											<GeometryDrawing Brush="LightBlue">
+												<GeometryDrawing.Pen>
+													<Pen Brush="Black" Thickness="1"/>
+												</GeometryDrawing.Pen>
+												<GeometryDrawing.Geometry>
+													<GeometryGroup>
+														<RectangleGeometry Rect="0,0,20,20"/>
+														<PathGeometry>
+															<PathFigure IsClosed="True" StartPoint="2,2">
+																<LineSegment Point="2, 18"/>
+																<LineSegment Point="6, 18"/>
+																<LineSegment Point="6, 15"/>
+																<LineSegment Point="18, 15"/>
+																<LineSegment Point="18, 2"/>
+															</PathFigure>
+														</PathGeometry>
+													</GeometryGroup>
+												</GeometryDrawing.Geometry>
+											</GeometryDrawing>
+
+										</DrawingImage.Drawing>
+									</DrawingImage>
+
+								</Image.Source>
+							</Image>
+						</Border>
+					</ControlTemplate>
+				</Setter.Value>
+
+			</Setter>
+		</Style>
+		<Style TargetType="{x:Type TabItem}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type TabItem}">
+						<Border  Name="header" Background="{TemplateBinding Background}"
+								BorderBrush="DarkGray"
+								BorderThickness="2" Padding="3" PreviewMouseMove="item_MouseMove" PreviewMouseDown="item_MouseDown" PreviewMouseUp="item_MouseUp">
+							<StackPanel Orientation="Horizontal">
+								<Border Width="2" Height="2"/>
+								<TextBlock Text="{TemplateBinding Header}" Foreground="Black"/>
+								<Border Width="2" Height="2"/>
+								<Button Name="headerbtnClose" Visibility="Collapsed" DockPanel.Dock="Right" Width="15" Height="15" Click="item_Close">
+									<Button.Background>
+										<SolidColorBrush Color="LightGray"/>
+									</Button.Background>
+									<Button.ToolTip>Close</Button.ToolTip>
+									<Image>
+										<Image.Source>
+											<DrawingImage>
+												<DrawingImage.Drawing>
+													<GeometryDrawing>
+														<GeometryDrawing.Pen>
+															<Pen Brush="Black" Thickness="3"/>
+														</GeometryDrawing.Pen>
+														<GeometryDrawing.Geometry >
+															<GeometryGroup>
+																<LineGeometry StartPoint="0,0" EndPoint="20,20"/>
+																<LineGeometry StartPoint="20,0" EndPoint="0,20"/>
+															</GeometryGroup>
+														</GeometryDrawing.Geometry>
+													</GeometryDrawing>
+												</DrawingImage.Drawing>
+											</DrawingImage>
+										</Image.Source>
+									</Image>
+								</Button>
+							</StackPanel>							
+						</Border>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsSelected" Value="True">
+								<Setter TargetName="header" Property="Background" Value="White"/>
+								<Setter TargetName="header" Property="TextBlock.FontWeight" Value="Bold"/>
+								<Setter TargetName="headerbtnClose" Property="Visibility" Value="Visible"/>
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+	</UserControl.Resources>
+	<Grid>
+		<DockPanel>
+			<Border Name="panelHeader" BorderThickness="1" BorderBrush="Gray" Padding="2" DockPanel.Dock="Top" Height="22">
+				<DockPanel Background="LightGray" >
+					<Button Name="btnClose" DockPanel.Dock="Right" Click="btnOnClose">
+						<Button.Background>
+							<SolidColorBrush Color="LightGray"/>
+						</Button.Background>
+						<Button.ToolTip>Close</Button.ToolTip>
+						<Image>
+							<Image.Source>
+								<DrawingImage>
+									<DrawingImage.Drawing>
+										<GeometryDrawing>
+											<GeometryDrawing.Pen>
+												<Pen Brush="Black" Thickness="3"/>
+											</GeometryDrawing.Pen>
+											<GeometryDrawing.Geometry >
+												<GeometryGroup>
+													<LineGeometry StartPoint="0,0" EndPoint="20,20"/>
+													<LineGeometry StartPoint="20,0" EndPoint="0,20"/>
+												</GeometryGroup>
+											</GeometryDrawing.Geometry>
+										</GeometryDrawing>
+									</DrawingImage.Drawing>
+								</DrawingImage>
+							</Image.Source>
+						</Image>
+					</Button>
+					<Button Name="btnAutoHide" DockPanel.Dock="Right" Click="btnOnAutoHide">
+						<Button.Background>
+							<SolidColorBrush Color="LightGray"/>
+						</Button.Background>
+						<Button.ToolTip>Auto hide</Button.ToolTip>
+						<Image>
+							<Image.Source>
+								<DrawingImage>
+									<DrawingImage.Drawing>
+										<GeometryDrawing>
+											<GeometryDrawing.Pen>
+												<Pen Brush="Black" Thickness="3"/>
+											</GeometryDrawing.Pen>
+											<GeometryDrawing.Geometry >
+												<GeometryGroup>
+													<RectangleGeometry Rect="0,0,20,15"/>
+													<LineGeometry StartPoint="10,15" EndPoint="10,20"/>
+												</GeometryGroup>
+											</GeometryDrawing.Geometry>
+										</GeometryDrawing>
+									</DrawingImage.Drawing>
+								</DrawingImage>
+							</Image.Source>
+						</Image>
+					</Button>
+					<!--<Button Name="btnPosDropDown" DockPanel.Dock="Right"></Button>-->
+					<TextBlock Name="tbTitle"  VerticalAlignment="Center" MouseDown="HeaderMouseDown" MouseMove="HeaderMouseMove" MouseUp="HeaderMouseUp"></TextBlock>
+				</DockPanel>
+			</Border>
+			<ContentPresenter Name="windowContent"/>
+		</DockPanel>
+		<Grid Name="panelDrag" Visibility="Collapsed" Width="60" Height="60">
+			<Grid.BitmapEffect>
+				<OuterGlowBitmapEffect GlowColor="Black" GlowSize="5" Noise="0" Opacity="0.4" />
+			</Grid.BitmapEffect>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+			<Button Name="btnDockTop" AllowDrop="True" Drop="OnDropDockTop" Style="{StaticResource DragPaneButtonStyle}" Grid.Column="1" Grid.Row="0">
+				<Button.LayoutTransform>
+					<RotateTransform Angle="-90"/>
+				</Button.LayoutTransform>
+			</Button>
+			<Button Name="btnDockRight" AllowDrop="True" Style="{StaticResource DragPaneButtonStyle}" Drop="OnDropDockRight" Grid.Column="2" Grid.Row="1"/>
+			<Button Name="btnDockBottom" AllowDrop="True" Style="{StaticResource DragPaneButtonStyle}" Drop="OnDropDockBottom" Grid.Column="1" Grid.Row="2">
+				<Button.LayoutTransform>
+					<RotateTransform Angle="90"/>
+				</Button.LayoutTransform>
+			</Button>
+			<Button Name="btnDockLeft" AllowDrop="True" Style="{StaticResource DragPaneButtonStyle}" Drop="OnDropDockLeft" Grid.Column="0" Grid.Row="1">
+				<Button.LayoutTransform>
+					<RotateTransform Angle="180"/>
+				</Button.LayoutTransform>				
+			</Button>
+			<Button Name="btnDockInto" AllowDrop="True" Style="{StaticResource DragIntoPaneButtonStyle}"  Drop="OnDropInto" Grid.Column="1" Grid.Row="1"/>
+		</Grid>
+	</Grid>
+</UserControl>

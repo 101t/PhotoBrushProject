@@ -1,0 +1,283 @@
+<custom:Pane x:Class="DockingLibrary.DockablePane"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	  xmlns:custom="clr-namespace:DockingLibrary"  >
+	<custom:Pane.Resources>
+		<Style x:Key="TabItemFocusVisual">
+			<Setter Property="Control.Template">
+				<Setter.Value>
+					<ControlTemplate>
+						<Rectangle SnapsToDevicePixels="True" Stroke="Black" StrokeDashArray="1 2" StrokeThickness="1" Margin="3,3,3,1"/>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<SolidColorBrush x:Key="TabControlNormalBorderBrush" Color="#919B9C"/>
+		<LinearGradientBrush x:Key="TabItemNormalBackground" EndPoint="0,1" StartPoint="0,0">
+			<GradientStop Color="#FFFFFFFF" Offset="0"/>
+			<GradientStop Color="#FFECEBE6" Offset="1"/>
+		</LinearGradientBrush>
+		<SolidColorBrush x:Key="TabItemHotBorderBrush" Color="#FFE68B2C"/>
+		<SolidColorBrush x:Key="TabItemHotBorderBackround" Color="#FFFFC73C"/>
+		<LinearGradientBrush x:Key="TabItemHotBackground" EndPoint="0,1" StartPoint="0,0">
+			<GradientStop Color="#FFFFFFFF" Offset="0"/>
+			<GradientStop Color="#FFECEBE6" Offset="1"/>
+		</LinearGradientBrush>
+		<SolidColorBrush x:Key="TabItemSelectedBorderBrush" Color="#FFE68B2C"/>
+		<SolidColorBrush x:Key="TabItemSelectedBorderBackround" Color="#FFFFC73C"/>
+		<SolidColorBrush x:Key="TabItemSelectedBackground" Color="#FFFCFCFE"/>
+		<SolidColorBrush x:Key="TabItemDisabledBackground" Color="#FFF5F4EA"/>
+		<SolidColorBrush x:Key="TabItemDisabledBorderBrush" Color="#FFC9C7BA"/>
+		<Style x:Key="DockablePaneTabItemStyle" TargetType="{x:Type TabItem}">
+			<Setter Property="FocusVisualStyle" Value="{StaticResource TabItemFocusVisual}"/>
+			<Setter Property="Padding" Value="12,2,12,2"/>
+			<Setter Property="BorderThickness" Value="1,1,1,0"/>
+			<Setter Property="BorderBrush" Value="{StaticResource TabControlNormalBorderBrush}"/>
+			<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+			<Setter Property="Background" Value="{StaticResource TabItemNormalBackground}"/>
+			<Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+			<Setter Property="VerticalContentAlignment" Value="Stretch"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type TabItem}">
+						<Border SnapsToDevicePixels="true">
+							<Grid Margin="0,0,1,0">
+								<Grid x:Name="Transform">
+									<Border x:Name="Bd" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="3,3,0,0"/>
+								</Grid>
+								<Border BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}">
+									<ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" HorizontalAlignment="{Binding Path=HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" VerticalAlignment="{Binding Path=VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" ContentSource="Header" RecognizesAccessKey="True" PreviewMouseDown="OnTabItemMouseDown" PreviewMouseUp="OnTabItemMouseUp" PreviewMouseMove="OnTabItemMouseMove"/>
+								</Border>
+							</Grid>
+						</Border>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsSelected" Value="true">
+								<Setter Property="Panel.ZIndex" Value="1"/>
+								<Setter Property="Background" TargetName="Bd" Value="{StaticResource TabItemSelectedBackground}"/>
+								<Setter Property="Background">
+									<Setter.Value>
+										<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+											<GradientStop Color="#FF574D1A" Offset="0"/>
+											<GradientStop Color="#FF1D6829" Offset="1"/>
+										</LinearGradientBrush>
+									</Setter.Value>
+								</Setter>
+								<Setter Property="BorderThickness" Value="1,1,1,0"/>
+							</Trigger>
+							<Trigger Property="TabStripPlacement" Value="Bottom">
+								<Setter Property="LayoutTransform" TargetName="Transform">
+									<Setter.Value>
+										<ScaleTransform ScaleX="1" ScaleY="-1"/>
+									</Setter.Value>
+								</Setter>
+							</Trigger>
+							<Trigger Property="TabStripPlacement" Value="Left">
+								<Setter Property="LayoutTransform" TargetName="Transform">
+									<Setter.Value>
+										<RotateTransform Angle="-90"/>
+									</Setter.Value>
+								</Setter>
+							</Trigger>
+							<Trigger Property="TabStripPlacement" Value="Right">
+								<Setter Property="LayoutTransform" TargetName="Transform">
+									<Setter.Value>
+										<RotateTransform Angle="90"/>
+									</Setter.Value>
+								</Setter>
+							</Trigger>
+							<Trigger Property="IsEnabled" Value="false">
+								<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+								<Setter Property="Background" TargetName="Bd" Value="{StaticResource TabItemDisabledBackground}"/>
+								<Setter Property="BorderBrush" TargetName="Bd" Value="{StaticResource TabItemDisabledBorderBrush}"/>
+							</Trigger>
+							<MultiTrigger>
+								<MultiTrigger.Conditions>
+									<Condition Property="IsSelected" Value="true"/>
+									<Condition Property="TabStripPlacement" Value="Top"/>
+								</MultiTrigger.Conditions>
+								<Setter Property="Margin" Value="-2,-2,-2,-1"/>
+							</MultiTrigger>
+							<MultiTrigger>
+								<MultiTrigger.Conditions>
+									<Condition Property="IsSelected" Value="true"/>
+									<Condition Property="TabStripPlacement" Value="Bottom"/>
+								</MultiTrigger.Conditions>
+								<Setter Property="Margin" Value="-2"/>
+							</MultiTrigger>
+							<MultiTrigger>
+								<MultiTrigger.Conditions>
+									<Condition Property="IsSelected" Value="true"/>
+									<Condition Property="TabStripPlacement" Value="Left"/>
+								</MultiTrigger.Conditions>
+								<Setter Property="Margin" Value="-2,-2,-1,-2"/>
+							</MultiTrigger>
+							<MultiTrigger>
+								<MultiTrigger.Conditions>
+									<Condition Property="IsSelected" Value="true"/>
+									<Condition Property="TabStripPlacement" Value="Right"/>
+								</MultiTrigger.Conditions>
+								<Setter Property="Margin" Value="-1,-2,-2,-2"/>
+							</MultiTrigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+		<ControlTemplate x:Key="DockableContentsTabControlTemplate" TargetType="{x:Type TabControl}">
+			<Grid x:Name="Grid" KeyboardNavigation.TabNavigation="Local">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition x:Name="ColumnDefinition0"/>
+					<ColumnDefinition x:Name="ColumnDefinition1" Width="0"/>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition x:Name="RowDefinition0" Height="*"/>
+					<RowDefinition x:Name="RowDefinition1" Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Border Grid.Row="0" Grid.Column="0" x:Name="ContentPanel" BorderBrush="#FFD0CEBF" BorderThickness="0,0,1,1" KeyboardNavigation.TabIndex="2" KeyboardNavigation.TabNavigation="Local" KeyboardNavigation.DirectionalNavigation="Contained">
+					<Border x:Name="Border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+						<Border Background="{TemplateBinding Background}" x:Name="Border1">
+							<ContentPresenter DataContext="{x:Null}" Margin="{TemplateBinding Padding}" x:Name="PART_SelectedContentHost" Content="{TemplateBinding SelectedContent}" ContentTemplate="{TemplateBinding SelectedContentTemplate}" ContentTemplateSelector="{TemplateBinding SelectedContentTemplateSelector}" ContentSource="SelectedContent"/>
+						</Border>
+					</Border>
+				</Border>
+
+				<custom:DockableContentTabItemsPanel IsItemsHost="True" Grid.Row="1" Grid.Column="0"/>
+
+			</Grid>
+		</ControlTemplate>
+
+		<Style x:Key="DockingHeaderButtonStyle" TargetType="{x:Type Grid}">
+					<Style.Triggers>
+						<Trigger Property="IsMouseOver" Value="True">
+							<Setter Property="Background" Value="Red"></Setter>
+						</Trigger>
+					</Style.Triggers>
+				</Style>
+	</custom:Pane.Resources>
+	<DockPanel >
+		<Border Name="PaneHeader" Height="18" Width="Auto" DockPanel.Dock="Top" BorderBrush="#FF000000" MouseDown="OnHeaderMouseDown" MouseUp="OnHeaderMouseUp" MouseMove="OnHeaderMouseMove">
+			<Border.Background>
+				<LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
+					<GradientStop Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}" Offset="0"/>
+					<GradientStop Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}" Offset="1"/>
+				</LinearGradientBrush>
+			</Border.Background>
+			<DockPanel Width="Auto" Height="Auto" LastChildFill="True">
+				<Grid Margin="2,3,0,4" Width="Auto" Height="Auto">
+					<Ellipse Width="4" Height="4" HorizontalAlignment="Right" Margin="0,0,5.5,0" VerticalAlignment="Bottom">
+						<Ellipse.Fill>
+							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}"/>
+						</Ellipse.Fill>
+						<Ellipse.Stroke>
+							<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+								<GradientStop Color="#FF000000" Offset="0"/>
+								<GradientStop Color="#FFFFFFFF" Offset="1"/>
+							</LinearGradientBrush>
+						</Ellipse.Stroke>
+					</Ellipse>
+					<Ellipse HorizontalAlignment="Left" VerticalAlignment="Top" Width="4" Height="4">
+						<Ellipse.Fill>
+							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}"/>
+						</Ellipse.Fill>
+						<Ellipse.Stroke>
+							<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+								<GradientStop Color="#FF000000" Offset="0"/>
+								<GradientStop Color="#FFFFFFFF" Offset="1"/>
+							</LinearGradientBrush>
+						</Ellipse.Stroke>
+					</Ellipse>
+					<Ellipse Height="4" HorizontalAlignment="Right" VerticalAlignment="Top" Width="4">
+						<Ellipse.Fill>
+							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}"/>
+						</Ellipse.Fill>
+						<Ellipse.Stroke>
+							<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+								<GradientStop Color="#FF000000" Offset="0"/>
+								<GradientStop Color="#FFFFFFFF" Offset="1"/>
+							</LinearGradientBrush>
+						</Ellipse.Stroke>
+					</Ellipse>
+				</Grid>
+				<Grid x:Name="btnClose" PreviewMouseDown="OnBtnCloseMouseDown" Width="16" Height="Auto"  DockPanel.Dock="Right" Margin="0,1,0,1" Style="{DynamicResource DockingHeaderButtonStyle}" >
+					<Grid.Background>
+						<LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
+							<GradientStop Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}" Offset="0"/>
+							<GradientStop Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}" Offset="1"/>
+						</LinearGradientBrush>
+					</Grid.Background>
+					<Path Fill="#FFFFFFFF" Stretch="Fill" Stroke="#FF000000" Margin="3,3,3,3" Data="M0,0L1,1"/>
+					<Path Fill="#FFFFFFFF" Stretch="Fill" Stroke="#FF000000" Margin="3,3,3,3" Data="M1,0L0,1"/>
+				</Grid>
+				<Grid x:Name="btnAutoHide" PreviewMouseDown="OnBtnAutoHideMouseDown" Width="16" Height="16" DockPanel.Dock="Right">
+					<Rectangle StrokeThickness="0" Margin="3,3,3,6">
+						<Rectangle.Fill>
+							<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+								<GradientStop Color="#FF000000" Offset="0"/>
+								<GradientStop Color="#FFFFFFFF" Offset="1"/>
+							</LinearGradientBrush>
+						</Rectangle.Fill>
+						<Rectangle.Stroke>
+							<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+								<GradientStop Color="#FF000000" Offset="0"/>
+								<GradientStop Color="#FFFFFFFF" Offset="1"/>
+							</LinearGradientBrush>
+						</Rectangle.Stroke>
+					</Rectangle>
+					<Path Fill="#FFFFFFFF" Stretch="Fill" Stroke="#FF000000" Margin="6,9,6,2" VerticalAlignment="Stretch" Data="M0,0L0,1"/>
+					<Path Fill="#FFFFFFFF" Stretch="Fill" Stroke="#FF000000" Margin="2,0,2,6" VerticalAlignment="Bottom" Height="1" Data="M0,0L1,0"/>
+				</Grid>
+				<Grid x:Name="btnMenu" PreviewMouseDown="OnBtnMenuMouseDown" Width="16" Height="Auto" Margin="0,0,0,0" DockPanel.Dock="Right">
+					<Grid.Background>
+						<LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
+							<GradientStop Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}" Offset="0"/>
+							<GradientStop Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}" Offset="1"/>
+						</LinearGradientBrush>
+					</Grid.Background>
+					<Path Stretch="Fill" Stroke="#FF000000" StrokeEndLineCap="Square" StrokeLineJoin="Round" StrokeThickness="0" Height="Auto" Data="M3,3 L13,3 L8,15" Margin="3,6,3,3">
+						<Path.Fill>
+							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlTextColorKey}}"/>
+						</Path.Fill>
+					</Path>
+					<Grid.ContextMenu >
+						<ContextMenu IsVisibleChanged="OnBtnMenuPopup">
+							<MenuItem Name="menuFloatingWindow" Header="Floating window" Click="OnDockingMenu"></MenuItem>
+							<MenuItem Name="menuDockedWindow" Header="Docked window" Click="OnDockingMenu"></MenuItem>
+							<MenuItem Name="menuTabbedDocument" Header="Tabbed document" Click="OnDockingMenu"></MenuItem>
+							<MenuItem Name="menuAutoHide" Header="Auto hide" Click="OnDockingMenu"></MenuItem>
+							<MenuItem Name="menuClose" Header="Close" Click="OnDockingMenu"></MenuItem>
+						</ContextMenu>
+					</Grid.ContextMenu>
+				</Grid>
+				<TextBlock Margin="2,0,0,0" Width="Auto" Height="Auto" Text="Title" TextWrapping="NoWrap"  VerticalAlignment="Center" FontSize="12" x:Name="tbTitle">
+					<TextBlock.Foreground>
+						<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlTextColorKey}}"/>
+					</TextBlock.Foreground>
+				</TextBlock>
+			</DockPanel>
+		</Border>
+		<Border Width="Auto" Height="Auto" BorderBrush="#FF000000" >
+			<Grid Background="LightGray">
+				<ContentPresenter Name="cpClientWindowContent" Visibility="Collapsed"/>
+				<TabControl Name="tbcContents" Visibility="Collapsed" Template="{DynamicResource DockableContentsTabControlTemplate}" IsSynchronizedWithCurrentItem="True" TabStripPlacement="Bottom">
+				</TabControl>
+			</Grid>
+		</Border>
+		<DockPanel.Style>
+			<Style TargetType="{x:Type DockPanel}">
+				<Style.Triggers>
+					<Trigger Property="IsFocused" Value="True">
+						<Setter Property="TextBlock.FontSize" Value="20" >
+							<!--<Setter.Value>
+								<LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
+									<GradientStop Color="{DynamicResource {x:Static Colors.Yellow}}" Offset="0"/>
+									<GradientStop Color="{DynamicResource {x:Static SystemColors.ActiveCaptionColorKey}}" Offset="1"/>
+								</LinearGradientBrush>
+							</Setter.Value>-->
+						</Setter>
+					</Trigger>
+				</Style.Triggers>
+			</Style>				
+		</DockPanel.Style>
+	</DockPanel>
+</custom:Pane>

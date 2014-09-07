@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9C51217D-15D1-4B83-AFD4-41DF9A0E464D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>AForge.Imaging</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AForge.Imaging</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Math\Math.csproj">
+      <Name>Math</Name>
+      <Project>{502C5328-EA0A-4A0C-A75A-413557846854}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Blob.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BlobCounter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ColorConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComplexImage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\2 Source filter\Add.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\2 Source filter\Difference.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\2 Source filter\Intersect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\2 Source filter\Merge.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\2 Source filter\Morph.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\2 Source filter\MoveTowards.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\2 Source filter\Subtract.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Adaptive Binarization\SISThreshold.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Binarization Filters\BayerDithering.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Binarization Filters\BurkesDithering.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Binarization Filters\ErrorDiffusionDithering.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Binarization Filters\FloydSteinbergDithering.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Binarization Filters\JarvisJudiceNinkeDithering.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Binarization Filters\OrderedDithering.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Binarization Filters\SierraDithering.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Binarization Filters\StevensonArceDithering.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Binarization Filters\StuckiDithering.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Binarization Filters\Threshold.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Binarization Filters\ThresholdCarry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Color Filters\ChannelFiltering.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Color Filters\ColorFiltering.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Color Filters\EuclideanColorFiltering.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Color Filters\ExtractChannel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Color Filters\GammaCorrection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Color Filters\Grayscale.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Color Filters\GrayscaleBT709.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Color Filters\GrayscaleRMY.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Color Filters\GrayscaleToRGB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Color Filters\GrayscaleY.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Color Filters\Invert.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Color Filters\ReplaceChannel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Color Filters\RotateChannels.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Color Filters\Sepia.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Convolution and Correlation\Blur.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Convolution and Correlation\Convolution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Convolution and Correlation\Correlation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Convolution and Correlation\Edges.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Convolution and Correlation\GaussianBlur.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Convolution and Correlation\Mean.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Convolution and Correlation\Sharpen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Convolution and Correlation\SharpenEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Crop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Edge Detectors\CannyEdgeDetector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Edge Detectors\DifferenceEdgeDetector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Edge Detectors\HomogenityEdgeDetector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Edge Detectors\SobelEdgeDetector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\FilterIterator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\FiltersSequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\HSL Filters\BrightnessCorrection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\HSL Filters\ContrastCorrection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\HSL Filters\HSLFiltering.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\HSL Filters\HSLLinear.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\HSL Filters\HueModifier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\HSL Filters\SaturationCorrection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\IFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\IInPlaceFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\LevelsLinear.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\MaskedFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Median.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Morphology\Closing.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Morphology\Dilatation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Morphology\Erosion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Morphology\HitAndMiss.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Morphology\Opening.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Other\AdaptiveSmooth.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Other\ConnectedComponentsLabeling.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Other\ConservativeSmoothing.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Other\Jitter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Other\OilPainting.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Other\Pixellate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Other\Shrink.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Other\SimpleSkeletonization.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Other\TexturedFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Other\TexturedMerge.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Other\Texturer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Resize.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\Rotate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\YCbCr Filters\YCbCrExtractChannel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\YCbCr Filters\YCbCrFiltering.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\YCbCr Filters\YCbCrLinear.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\YCbCr Filters\YCbCrReplaceChannel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filters\_Purgatory_\TestFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Image.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ImageStatistics.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ImageStatisticsHSL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ImageStatisticsYCbCr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interpolation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LineHoughTransform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Textures\CloudsTexture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Textures\ITextureGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Textures\LabyrinthTexture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Textures\MarbleTexture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Textures\TextileTexture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Textures\WoodTexture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Win32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="ImagingClassDiagram.cd" />
+    <None Include="Copyright.txt" />
+    <None Include="History.txt" />
+    <None Include="TODO.txt" />
+    <None Include="Version.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

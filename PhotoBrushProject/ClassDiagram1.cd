@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PhotoBrushProject.ColorSlider" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACgEAAIEDAQAAQAUAAAAAACAAIBAACAAQAAkCAIBDA=</HashCode>
+      <FileName>ComponentControls\ColorSlider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.FilterPreview" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAKAAAAAACQAAAAACAAAEAgCGBAAABIAAAwAAAQAASg=</HashCode>
+      <FileName>ComponentControls\FilterPreview.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.GridArray" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAgEQAAAAAAQIAAAAAgAAAAAAAAAAAAACAAIAAAACAA=</HashCode>
+      <FileName>ComponentControls\GridArray.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.GridEventArgs" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQACAAEAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>ComponentControls\GridArrayInt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.GridArrayInt" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAQAAAAAAgAAAgAAEQAAAEAAAAAAAAAABA=</HashCode>
+      <FileName>ComponentControls\GridArrayInt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.HistogramEventArgs" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAABAQAAAgEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ComponentControls\Histogram.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.Histogram" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAEAAAACAAAocqQAAAiAACQAEhAmCAAAAgwAAAACA=</HashCode>
+      <FileName>ComponentControls\Histogram.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.HuePicker" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACgEACKADAQAAAAEAQAgAACAAABAAAAAQgAgAAgCCA=</HashCode>
+      <FileName>ComponentControls\HuePicker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.DetailsForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAQIAAAAGAAAAAACCCAQAACCABAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Forms Builder\DetailsForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoBrushProject.ColorImageStatisticsDescription" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ISEAg9mKQlUhwAAgFDiDEMBUOEQmoCUCYGiIgBoIgEI=</HashCode>
+      <FileName>Forms Builder\DetailsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.AdaptiveSmoothForm" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACQAQBAAAACAECACgDABEBAAACAAAgBAAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\AdaptiveSmoothForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.BrightnessForm" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAACRAABAAAACAEAgCABABEBAAACAAAAAAAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\BrightnessForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.CannyDetectorForm" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAgAAEiQAABAACAiAEAAGABABEBAAACAAAAAgAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\CannyDetectorForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.ChannelFilteringForm" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>cQIgBAIJCCUERBAEEAaaEAAKADABEBCAECAACABBFwI=</HashCode>
+      <FileName>Forms Builder\Filters Forms\ChannelFilteringForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.ColorFilteringForm" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQAABAIJCCUEABAEEIaaEAAKADABEBCAEDAACAABNwI=</HashCode>
+      <FileName>Forms Builder\Filters Forms\ColorFilteringForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.Configuration" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgJQAQAAAAAAAAIIAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\Configuration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.ContrastForm" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACQAABAAAACIEAACABAFUBAAACAAAAAIAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\ContrastForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.ConvolutionForm" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAIABC6IABAAEACAEAACABAJEBAAACAAQAAEAAI=</HashCode>
+      <FileName>Forms Builder\Filters Forms\ConvolutionForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.EuclideanColorFilteringForm" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EaAAAAAISCQEEBQEAIaKGAACABABFBiAgDAAKAABFgA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\EuclideanColorFilteringForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.FrequencyFilter" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQBCQAEBQAIACIAAICgACAEACACCAAAAAIAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\FrequencyFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.GammaForm" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACQEABAAAACAEAACABABEBMCACAAAAAAAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\GammaForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.GaussianForm" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAECQgABAACACAEAAGBBABEBIAACAAAABgAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\GaussianForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.HSLFilteringForm" Collapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FgIAwEgAECQAABSgEIGAdCiGaBAhFBIAAHEAAAkAYBA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\HSLFilteringForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.HSLLinearForm" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABQAACSAAJAIkACiEAACADmBEpABQCCAAABEIAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\HSLLinearForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.HueModifierForm" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAACQAABQAAACAEAAGABABEBAAACAAAAEAAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\HueModifierForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.LevelsLinearForm" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAQKSAAFAKkACiEAAiADgBEJCBUCCAAABEIAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\LevelsLinearForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.MathMorphologyForm" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAIABC6IABAAEASAEAASABAJABAAACAQQAAEAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\MathMorphologyForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.MorphForm" Collapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACQAABAAAACAEAACAJABEBAAACAIAABAAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\MorphForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.OilPaintingForm" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACQgABAAAACAECACABABEBIAACAAAgBAAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\OilPaintingForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.PerlinNoiseForm" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAEACQAABAAAACAEAACABABEBAACCAAAABAAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\PerlinNoiseForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.PixelateForm" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAICQgABMAEACAEBAKABABEBAAACAAAAFIAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\PixelateForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.ResizeForm" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAEICQAABIgAACQEAAKgDAAGAIEACAAIABoAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\ResizeForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.RotateForm" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AaACAAAIACQAABAAAACQEAACABAAEAAAACAAAEAAAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\RotateForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.SaturationForm" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAIAAACQAABAAAACAEAACABABEBAAgCBAAAAAAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\SaturationForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.SelectImageForm" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAACQwAAAAAACAAAICAgAAEAAAABAAAQRAAAI=</HashCode>
+      <FileName>Forms Builder\Filters Forms\SelectImageForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.Serialize2DimArray" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\Serialize2DimArray.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.SharpenExForm" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAECQgABAACACAEAAGBBABEBIAACAAAABgAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\SharpenExForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.ShrinkForm" Collapsed="true">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AaACAAAAACQAABAAAACAEAACABAAEAAAACAAAAAAAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\ShrinkForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.ThresholdForm" Collapsed="true">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJAAEAAAACQQABAAIACIEAICABCBEBAAACAEAAAAAAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\ThresholdForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.YCbCrFilteringForm" Collapsed="true">
+    <Position X="9.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EEACBEgAAKQkyBBAFInAEgICABQBEBABADSAggAgIAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\YCbCrFilteringForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.YCbCrLinearForm" Collapsed="true">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIBAAACSAAJAIkACiMAACADiBGJAJQCCAAABEIAA=</HashCode>
+      <FileName>Forms Builder\Filters Forms\YCbCrLinearForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.HistogramForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQJAAEAGEAABAACCSgQASmCABAAgCAUAAEAwCABAA=</HashCode>
+      <FileName>Forms Builder\HistogramForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoBrushProject.ImageHandlerForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hrLWKy6aQHJLBdRq+CnQyJaOGhF2xrH9PUijRkjLgdM=</HashCode>
+      <FileName>Forms Builder\ImageHandlerForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoBrushProject.SelectionEventArgs" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAIIAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms Builder\ImageHandlerForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.NewPaintForm" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECAAABAAAADAAAACAAA4QAAAAFAAAABAAAA=</HashCode>
+      <FileName>Forms Builder\NewPaintForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.PaintHandlerForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hIAUIAAIAHIGCAAAQEKIQiCCCAAAgAAAAADAYAREgAA=</HashCode>
+      <FileName>Forms Builder\PaintHandlerForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoBrushProject.PsdHandlerForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQIAAAAGAAAFAAAACAQAACCAAAAAAgAAAAAABAAAA=</HashCode>
+      <FileName>Forms Builder\PsdHandlerForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoBrushProject.StartPageForm" BaseTypeListCollapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BAAYIABAAGAEABAAgDCAQAQCCADAAAAAQAAAAQAAAAA=</HashCode>
+      <FileName>Forms Builder\StartPageForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoBrushProject.ToolBoxForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQIAAAAGAAAAAAAACAQAACCABAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Forms Builder\ToolBoxForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoBrushProject.MainForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>w7qKh/+KtDAPaeV/O1b/3AO+/LfV/uGM8v/t9vKtz/8=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoBrushProject.Program" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.FileSerializer" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserControls\FileSerializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.ShapeControlPanel" Collapsed="true">
+    <Position X="12.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gABAAAABAKAAAAACAgCAQAACAIAIAACAAACAQAAAgAA=</HashCode>
+      <FileName>UserControls\ShapeControlPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.Properties.Resources" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoBAAoCAABAglAAhEBQBFAAEIwIQEaIMgAIAgGAoJIQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBrushProject.Properties.Settings" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="PhotoBrushProject.IDocumentsHost" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAQAAAEAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Forms Builder\IDocumentsHost.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PhotoBrushProject.IFormBuilder" Collapsed="true">
+    <Position X="2.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAACAABBgA=</HashCode>
+      <FileName>Forms Builder\IFormBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="PhotoBrushProject.ColorSliderType" Collapsed="true">
+    <Position X="0.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEBAAgAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>ComponentControls\ColorSlider.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PhotoBrushProject.HuePickerType" Collapsed="true">
+    <Position X="4" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>ComponentControls\HuePicker.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PhotoBrushProject.ImageDocCommands" Collapsed="true">
+    <Position X="5.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAUAAIAAAAAAABAAAAAAAAAEAAAAgCBIEAgCBkAAJA=</HashCode>
+      <FileName>Forms Builder\ImageHandlerForm.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PhotoBrushProject.FormStyle" Collapsed="true">
+    <Position X="2.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACgAAABAIAAQAAAAAAAIAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

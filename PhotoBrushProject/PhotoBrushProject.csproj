@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6C6B4F05-5327-46E6-8349-226E7E47D50F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhotoBrushProject</RootNamespace>
+    <AssemblyName>PhotoBrushProject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\icon_black512.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SourceGrid2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=ad929b4064585aea">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SourceGrid2.dll</HintPath>
+    </Reference>
+    <Reference Include="SourceLibrary, Version=1.2.3.0, Culture=neutral, PublicKeyToken=96907d46c0a9af87">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SourceLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComponentControls\ColorSlider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ComponentControls\FilterPreview.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ComponentControls\GridArray.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ComponentControls\GridArrayInt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ComponentControls\Histogram.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ComponentControls\HuePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\AboutPB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\AboutPB.Designer.cs">
+      <DependentUpon>AboutPB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Builder\DetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\DetailsForm.Designer.cs">
+      <DependentUpon>DetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\AdaptiveSmoothForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\BrightnessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\CannyDetectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\ChannelFilteringForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\ColorFilteringForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\Configuration.cs" />
+    <Compile Include="Forms Builder\Filters Forms\ContrastForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\ConvolutionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\EuclideanColorFilteringForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\FrequencyFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\GammaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\GaussianForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\HSLFilteringForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\HSLLinearForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\HueModifierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\LevelsLinearForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\MathMorphologyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\MorphForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\OilPaintingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\PerlinNoiseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\PixelateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\ResizeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\RotateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\SaturationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\SelectImageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\Serialize2DimArray.cs" />
+    <Compile Include="Forms Builder\Filters Forms\SharpenExForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\ShrinkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\ThresholdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\YCbCrFilteringForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\Filters Forms\YCbCrLinearForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\HistogramForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\HistogramForm.Designer.cs">
+      <DependentUpon>HistogramForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Builder\IDocumentsHost.cs" />
+    <Compile Include="Forms Builder\IFormBuilder.cs" />
+    <Compile Include="Forms Builder\ImageHandlerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\ImageHandlerForm.Designer.cs">
+      <DependentUpon>ImageHandlerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Builder\MottoSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\MottoSplash.designer.cs">
+      <DependentUpon>MottoSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Builder\NewPaintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\NewPaintForm.Designer.cs">
+      <DependentUpon>NewPaintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Builder\ToolBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\ToolBoxForm.Designer.cs">
+      <DependentUpon>ToolBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Builder\PaintHandlerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\PaintHandlerForm.Designer.cs">
+      <DependentUpon>PaintHandlerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms Builder\StartPageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\StartPageForm.Designer.cs">
+      <DependentUpon>StartPageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Builder\PsdHandlerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Builder\PsdHandlerForm.Designer.cs">
+      <DependentUpon>PsdHandlerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FileSerializer.cs" />
+    <Compile Include="UserControls\ShapeControlPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ShapeControlPanel.Designer.cs">
+      <DependentUpon>ShapeControlPanel.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ComponentControls\ColorSlider.resx">
+      <DependentUpon>ColorSlider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentControls\FilterPreview.resx">
+      <DependentUpon>FilterPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentControls\GridArray.resx">
+      <DependentUpon>GridArray.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentControls\GridArrayInt.resx">
+      <DependentUpon>GridArrayInt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentControls\Histogram.resx">
+      <DependentUpon>Histogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentControls\HuePicker.resx">
+      <DependentUpon>HuePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\AboutPB.resx">
+      <DependentUpon>AboutPB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\DetailsForm.resx">
+      <DependentUpon>DetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\AdaptiveSmoothForm.resx">
+      <DependentUpon>AdaptiveSmoothForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\BrightnessForm.resx">
+      <DependentUpon>BrightnessForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\CannyDetectorForm.resx">
+      <DependentUpon>CannyDetectorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\ChannelFilteringForm.resx">
+      <DependentUpon>ChannelFilteringForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\ColorFilteringForm.resx">
+      <DependentUpon>ColorFilteringForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\ContrastForm.resx">
+      <DependentUpon>ContrastForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\ConvolutionForm.resx">
+      <DependentUpon>ConvolutionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\EuclideanColorFilteringForm.resx">
+      <DependentUpon>EuclideanColorFilteringForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\FrequencyFilter.resx">
+      <DependentUpon>FrequencyFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\GammaForm.resx">
+      <DependentUpon>GammaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\GaussianForm.resx">
+      <DependentUpon>GaussianForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\HSLFilteringForm.resx">
+      <DependentUpon>HSLFilteringForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\HSLLinearForm.resx">
+      <DependentUpon>HSLLinearForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\HueModifierForm.resx">
+      <DependentUpon>HueModifierForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\LevelsLinearForm.resx">
+      <DependentUpon>LevelsLinearForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\MathMorphologyForm.resx">
+      <DependentUpon>MathMorphologyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\MorphForm.resx">
+      <DependentUpon>MorphForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\OilPaintingForm.resx">
+      <DependentUpon>OilPaintingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\PerlinNoiseForm.resx">
+      <DependentUpon>PerlinNoiseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\PixelateForm.resx">
+      <DependentUpon>PixelateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\ResizeForm.resx">
+      <DependentUpon>ResizeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\RotateForm.resx">
+      <DependentUpon>RotateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\SaturationForm.resx">
+      <DependentUpon>SaturationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\SelectImageForm.resx">
+      <DependentUpon>SelectImageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\SharpenExForm.resx">
+      <DependentUpon>SharpenExForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\ShrinkForm.resx">
+      <DependentUpon>ShrinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\ThresholdForm.resx">
+      <DependentUpon>ThresholdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\YCbCrFilteringForm.resx">
+      <DependentUpon>YCbCrFilteringForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\Filters Forms\YCbCrLinearForm.resx">
+      <DependentUpon>YCbCrLinearForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\HistogramForm.resx">
+      <DependentUpon>HistogramForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\ImageHandlerForm.resx">
+      <DependentUpon>ImageHandlerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\MottoSplash.resx">
+      <DependentUpon>MottoSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\NewPaintForm.resx">
+      <DependentUpon>NewPaintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\PaintHandlerForm.resx">
+      <DependentUpon>PaintHandlerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\PsdHandlerForm.resx">
+      <DependentUpon>PsdHandlerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Builder\ToolBoxForm.resx">
+      <DependentUpon>ToolBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms Builder\StartPageForm.resx">
+      <DependentUpon>StartPageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ShapeControlPanel.resx">
+      <DependentUpon>ShapeControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_content.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show-clipping.png" />
+    <None Include="Resources\anti-alias.png" />
+    <None Include="Resources\shapes.png" />
+    <None Include="Resources\ConvertToCurve.png" />
+    <None Include="Resources\ConvertToLine.png" />
+    <None Include="Resources\DeleteNode.png" />
+    <None Include="Resources\Covers.png" />
+    <None Include="Resources\nodetool.png" />
+    <None Include="Resources\BringToFront.png" />
+    <None Include="Resources\SendToBack.png" />
+    <None Include="Resources\PositionXY.png" />
+    <Content Include="Resources\arrow.bmp" />
+    <Content Include="Resources\harrow.cur" />
+    <Content Include="Resources\hmove.cur" />
+    <None Include="Resources\Pb-Splash.png" />
+    <None Include="Resources\icon_128.png" />
+    <None Include="Resources\logo.gif" />
+    <Content Include="Resources\Shapes\Shape01Text.png" />
+    <Content Include="Resources\Shapes\Shape02Line.png" />
+    <Content Include="Resources\Shapes\Shape03Rectangle.png" />
+    <Content Include="Resources\Shapes\Shape04Triangle.png" />
+    <Content Include="Resources\Shapes\Shape05Polygon.png" />
+    <Content Include="Resources\Shapes\Shape06Circle.png" />
+    <Content Include="Resources\Shapes\Shape07Bitmap.png" />
+    <None Include="Resources\information-frame.png" />
+    <None Include="Resources\print16.png" />
+    <None Include="Resources\printpreview16.png" />
+    <None Include="Resources\options16.png" />
+    <None Include="Resources\redo16.png" />
+    <None Include="Resources\undo16.png" />
+    <None Include="Resources\paste.png" />
+    <None Include="Resources\scissors.png" />
+    <None Include="Resources\save as.png" />
+    <None Include="Resources\Save 16.png" />
+    <None Include="Resources\StartPage.png" />
+    <None Include="Resources\background.png" />
+    <None Include="Resources\document.png" />
+    <None Include="Resources\folder-horizontal-open.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\cross.png" />
+    <Content Include="Resources\icon_black512.ico" />
+    <None Include="Resources\Pb 2013 Logo.png" />
+    <None Include="Resources\l_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Animator\Animator.csproj">
+      <Project>{97FE1093-38D3-4EEC-A602-340F792C9D25}</Project>
+      <Name>Animator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Crom.Controls\Crom.Controls.csproj">
+      <Project>{F2999C1D-BED3-4D47-A8AC-8027334ECDC1}</Project>
+      <Name>Crom.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Imaging\Imaging.csproj">
+      <Project>{9C51217D-15D1-4B83-AFD4-41DF9A0E464D}</Project>
+      <Name>Imaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Math\Math.csproj">
+      <Project>{502C5328-EA0A-4A0C-A75A-413557846854}</Project>
+      <Name>Math</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Painting\Painting.csproj">
+      <Project>{52DBC0DE-26B5-48DC-88D0-1AB610A43A4B}</Project>
+      <Name>Painting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PsdFramework\PsdFramework.csproj">
+      <Project>{1EE5922B-BE78-411A-8865-7A7F2DEAC47E}</Project>
+      <Name>PsdFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

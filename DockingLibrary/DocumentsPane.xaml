@@ -1,0 +1,122 @@
+<custom:Pane x:Class="DockingLibrary.DocumentsPane"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:custom="clr-namespace:DockingLibrary"  >
+	<custom:Pane.Resources>
+	<Style x:Key="DocTabItemStyle" TargetType="{x:Type TabItem}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate>
+						<Border VerticalAlignment="Bottom" Height="18" BorderThickness="1,1,1,0" CornerRadius="4,4,0,0" x:Name="border" PreviewMouseDown="OnTabItemMouseDown" MouseUp="OnTabItemMouseUp" MouseMove="OnTabItemMouseMove">
+							<Border.Background>
+								<LinearGradientBrush EndPoint="0.5,0.0" StartPoint="0.5,1">
+									<GradientStop Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}" Offset="0"/>
+									<GradientStop Color="#FFFFFFFF" Offset="1"/>
+								</LinearGradientBrush>
+							</Border.Background>
+							<Border.BorderBrush>
+								<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
+							</Border.BorderBrush>
+							<ContentPresenter Content="{TemplateBinding HeaderedContentControl.Header}" Margin="2,0,0,0" x:Name="header"/>
+						</Border>
+						<ControlTemplate.Triggers>
+							<Trigger Property="Selector.IsSelected" Value="True">
+								<Setter Property="Background" TargetName="border">
+									<Setter.Value>
+										<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightLightColorKey}}"/>
+									</Setter.Value>
+								</Setter>
+								<Setter Property="TextBlock.FontWeight" Value="Bold" TargetName="header"/>
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+   
+		<Style x:Key="DocumentsTabSwitchMenuButtonStyle" TargetType="{x:Type Button}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate>
+						<Border Height="18">
+							<Path Stretch="Fill" Stroke="#FF000000" StrokeEndLineCap="Square" StrokeLineJoin="Round" StrokeThickness="0" Height="Auto" Data="M3,3 L13,3 L8,15" Margin="3,6,3,3">
+								<Path.Fill>
+									<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlTextColorKey}}"/>
+								</Path.Fill>
+							</Path>
+						</Border>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+		<Style x:Key="DocumentsTabCloseButtonStyle" TargetType="{x:Type Button}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate>
+						<Border Height="18" Padding="0,1,0,1">
+							<Grid>
+								<Path Fill="#FFFFFFFF" Stretch="Fill" Stroke="#FF000000" Margin="3,3,3,3" Data="M0,0L1,1"/>
+								<Path Fill="#FFFFFFFF" Stretch="Fill" Stroke="#FF000000" Margin="3,3,3,3" Data="M1,0L0,1"/>
+							</Grid>
+						</Border>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+		<ControlTemplate x:Key="DocumentsTabControlTemplate" TargetType="{x:Type TabControl}">
+			<Grid x:Name="Grid" KeyboardNavigation.TabNavigation="Local">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition x:Name="ColumnDefinition0"/>
+					<ColumnDefinition x:Name="ColumnDefinition1" Width="0"/>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition x:Name="RowDefinition0" Height="Auto"/>
+					<RowDefinition x:Name="RowDefinition1" Height="*"/>
+				</Grid.RowDefinitions>
+				<Border Grid.Row="1" Grid.Column="0" x:Name="ContentPanel" BorderBrush="#FFD0CEBF" BorderThickness="0,0,1,1" KeyboardNavigation.TabIndex="2" KeyboardNavigation.TabNavigation="Local" KeyboardNavigation.DirectionalNavigation="Contained">
+					<Border x:Name="Border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+						<Border Background="{TemplateBinding Background}" x:Name="Border1">
+							<ContentPresenter DataContext="{x:Null}" Margin="{TemplateBinding Padding}" x:Name="PART_SelectedContentHost" Content="{TemplateBinding SelectedContent}" ContentTemplate="{TemplateBinding SelectedContentTemplate}" ContentTemplateSelector="{TemplateBinding SelectedContentTemplateSelector}" ContentSource="SelectedContent"/>
+						</Border>
+					</Border>
+				</Border>
+				<ScrollViewer x:Name="HeaderPanel" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,0" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Disabled">
+					<ScrollViewer.Style>
+						<Style TargetType="{x:Type ScrollViewer}">
+							<Setter Property="Template">
+								<Setter.Value>
+									<ControlTemplate>
+										<Grid Margin="0,0,0,0" Grid.Row="0" Grid.Column="0" x:Name="HeaderPanel">
+											<Grid.ColumnDefinitions>
+												<ColumnDefinition Width="*"/>
+												<ColumnDefinition Width="16"/>
+												<ColumnDefinition Width="16"/>
+											</Grid.ColumnDefinitions>
+											<Grid.RowDefinitions>
+												<RowDefinition Height="Auto"/>
+											</Grid.RowDefinitions>
+											<ScrollContentPresenter Grid.Column="0" Content="{TemplateBinding ScrollViewer.Content}" />
+											<Button Grid.Column="1" Style="{StaticResource DocumentsTabSwitchMenuButtonStyle}" PreviewMouseDown="OnBtnDocumentsMenu">
+											</Button>
+											<Button Grid.Column="2" Style="{StaticResource DocumentsTabCloseButtonStyle}" PreviewMouseDown="OnBtnDocumentClose"/>
+										</Grid>
+ 									</ControlTemplate>
+ 								</Setter.Value>
+ 							</Setter>
+ 						</Style>
+ 					</ScrollViewer.Style>
+ 				
+					<StackPanel IsItemsHost="True" Orientation="Horizontal" Background="{x:Null}" KeyboardNavigation.TabIndex="1" />
+				</ScrollViewer>
+
+    </Grid>
+	</ControlTemplate>
+	
+	</custom:Pane.Resources>
+	<Grid>
+		<TabControl Name="tbcDocuments" IsSynchronizedWithCurrentItem="True"   Template="{DynamicResource DocumentsTabControlTemplate}" Visibility="Collapsed">
+		</TabControl>
+	</Grid>
+</custom:Pane>

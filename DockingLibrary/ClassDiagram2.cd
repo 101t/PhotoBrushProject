@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DockingLibrary.DockableContent" Collapsed="true">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAEAAEAAAAAEAAAAEAAAAAAAAAAEgAAA=</HashCode>
+      <FileName>DockableContent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DockingLibrary.DockableContentTabItemsPanel" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DockableContentTabItemsPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DockingLibrary.DockablePane" Collapsed="true">
+    <Position X="4" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYMQMgQARCEKJUEAERQBDgCCymBMAAIFAkgglAGIEAI=</HashCode>
+      <FileName>DockablePane.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DockingLibrary.DockablePaneGroup" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAJAEgoAAAAAAAAgAAAgAQQEADhRgAAAAAgAAAAAEAA=</HashCode>
+      <FileName>DockablePaneGroup.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DockingLibrary.DockingButton" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAGAAgAAAAAAAAAAAAAAAAAAAAAAAAgAAEAQAAAAA=</HashCode>
+      <FileName>DockingButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DockingLibrary.DockingButtonGroup" Collapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DockingButtonGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DockingLibrary.DockingGrid" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIIQAACAAAQAAEABAADhAAIACBYAAAAAAAgAABAAAA=</HashCode>
+      <FileName>DockingGrid.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DockingLibrary.DockManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoIBAABAUAIAAABABgAJJAEIgRgMCAgOJCQ5ABNClBA=</HashCode>
+      <FileName>DockManager.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DockingLibrary.DockPanelSplitter" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAMAAAAIBAAAAAAAAAAABAAAAAAIAAAAAACAgA=</HashCode>
+      <FileName>DockPanelSplitter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DockingLibrary.DocumentContent" Collapsed="true">
+    <Position X="2.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DocumentContent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DockingLibrary.DocumentsPane" Collapsed="true">
+    <Position X="0.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QIIAAAQAAAAIIAEAAIQIBAAAgQAEAAAGCAAAAAAAAAA=</HashCode>
+      <FileName>DocumentsPane.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DockingLibrary.DragPaneServices" Collapsed="true">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAggAAAAGAAAAAAwIAAAAAAAARAAAAAAAAAKAA0AA=</HashCode>
+      <FileName>DragPaneServices.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DockingLibrary.FloatingWindow" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CABAAAAABAAAQAAAQAAAgAAIAABAgYAQCAAkAAAAIAA=</HashCode>
+      <FileName>FloatingWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DockingLibrary.FloatingWindowHostedPane" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAhAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FloatingWindowHostedPane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DockingLibrary.ManagedContent" Collapsed="true">
+    <Position X="1.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAFAAACCAAAA=</HashCode>
+      <FileName>ManagedContent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DockingLibrary.OverlayDockablePane" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAEAAQAAAAAAACAAAA=</HashCode>
+      <FileName>OverlayDockablePane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DockingLibrary.OverlayWindowDockingButton" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAgAAAAAAAAIAAAAAAhAAAAAAAAAgAAAAQAAAAEAA=</HashCode>
+      <FileName>OverlayWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DockingLibrary.OverlayWindow" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAQAAAIAQAAAAAgAAAgAAAABoAQQACABAAA=</HashCode>
+      <FileName>OverlayWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DockingLibrary.Pane" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIJAIAAAAAAAAIEAEAQABBAAACBEAAgAAAAQECDAEAA=</HashCode>
+      <FileName>Pane.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DockingLibrary.Properties.Resources" Collapsed="true">
+    <Position X="13" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DockingLibrary.Properties.Settings" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DockingLibrary.IDropSurface" Collapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAABAAAAAAAAAgAAAAQAAAAEAA=</HashCode>
+      <FileName>IDropSurface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DockingLibrary.ILayoutSerializable" Collapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ILayoutSerializable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="DockingLibrary.PaneState" Collapsed="true">
+    <Position X="7.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAIAACAAAAAAAAAAAACAAAAAAAAAAAAAEEAAA=</HashCode>
+      <FileName>DockablePane.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DockingLibrary.SplitOrientation" Collapsed="true">
+    <Position X="9.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DockablePaneGroup.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="DockingLibrary.GetContentFromTypeString" Collapsed="true">
+    <Position X="11.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ILayoutSerializable.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
