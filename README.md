@@ -1,6 +1,4 @@
 # Photo Brush Studio Project 
-
-PhotoBrushProject
 =================
 
 ![PhotoBrush L](PhotoBrushProject/Resources/icon_black512.ico "PhotoBrushStudio")
