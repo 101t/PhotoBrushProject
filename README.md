@@ -25,7 +25,7 @@ Photo Brush Studio project used techniques
 - PSD Framework
 
 ## License
-This project licensed under MIT license.
+This project licensed under [MIT](http://opensource.org/licenses/MIT) license.
 
 ## Acknowledgements
 Many thanks to AForge.NET for their support on Filter and many libraries as well as [Code Project](www.codeproject.com), [C Sharp Corner](http://www.c-sharpcorner.com/), and Microsoft.
