@@ -18,11 +18,11 @@ Photo Brush Studio project using C# and GDI+ in 4.0 framework envirement in Wind
 ## Code and Features
 Photo Brush Studio project used techniques
 - Windows Form Application on Microsoft Visual Studio 2010, User Controls, Component Classes, Design compatible with Windows 8 operating system.
-- Unsafe Technique for image filtering and [AForge. NET Framework](http://www.aforgenet.com/)       ![AForge L](PhotoBrushProject/Resources/logo.gif "AForge")
 - GDI+ for painting 
 - Docking Window
 - Animation Library 
 - PSD Framework
+- Unsafe Technique for image filtering and [AForge. NET Framework](http://www.aforgenet.com/) ![AForge L](PhotoBrushProject/Resources/logo.gif "AForge")
 
 ## License
 Photo Brush Studio project licensed under [MIT](http://opensource.org/licenses/MIT) license.
