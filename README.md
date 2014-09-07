@@ -31,5 +31,4 @@ Photo Brush Studio project licensed under [MIT](http://opensource.org/licenses/M
 Many thanks to [AForge. NET Framework](http://www.aforgenet.com/) for their support on Filter and many libraries as well as [Code Project](http://www.codeproject.com), [C Sharp Corner](http://www.c-sharpcorner.com/), and Microsoft.
 
 ## Dedication
-This report is the result of our graduation project for the bachelor’s degree in Information Technology engineering at Faculty of Engineering at the University Of Kalamoon.
-We would like to express our job to Dr. Mohamed Hajji, Dr. Anton Ghnim, Dr. Monssef Alsweis, Dr. Rami Yared, Eng. Ahmad Osman, and Eng. Muaz Othman for his priceless advice, support and contribution that he made during our work on this project, special thanks to all other instructors for their efforts in teaching us what we utilized in this project and will utilize in future project.
+This report is the result of our graduation project for the bachelor’s degree in Information Technology engineering at Faculty of Engineering at the University Of Kalamoon - Syria.
