@@ -28,7 +28,7 @@ Photo Brush Studio project used techniques
 Photo Brush Studio project licensed under [MIT](http://opensource.org/licenses/MIT) license.
 
 ## Acknowledgements
-Many thanks to AForge.NET for their support on Filter and many libraries as well as [Code Project](www.codeproject.com), [C Sharp Corner](http://www.c-sharpcorner.com/), and Microsoft.
+Many thanks to AForge.NET for their support on Filter and many libraries as well as [Code Project](http://www.codeproject.com), [C Sharp Corner](http://www.c-sharpcorner.com/), and Microsoft.
 
 ## Dedication
 This report is the result of our graduation project for the bachelor’s degree in Information Technology engineering at Faculty of Engineering at the University Of Kalamoon.
