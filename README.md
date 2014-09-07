@@ -1,7 +1,6 @@
 # Photo Brush Studio Project 
-=================
 
-![PhotoBrush L](PhotoBrushProject/Resources/icon_black512.ico "PhotoBrushStudio")
+![PhotoBrush L](PhotoBrushProject/Resources/icon_128.png "PhotoBrushStudio")
 
 Photo Brush Studio project using C# and GDI+ in 4.0 framework envirement in Windows 8, Photo Brush an image editing tools look like Adobe Photoshop this tool provide many kinds of images such as JPG, PNG, GIF, PSD, and PBP own binary file.
 
