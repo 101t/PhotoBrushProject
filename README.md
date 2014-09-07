@@ -23,6 +23,7 @@ Photo Brush Studio project used techniques
 - Animation Library 
 - PSD Framework
 - Unsafe Technique for image filtering and [AForge. NET Framework](http://www.aforgenet.com/) 
+
 ![AForge L](PhotoBrushProject/Resources/logo.gif "AForge")
 
 ## License
