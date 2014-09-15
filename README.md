@@ -7,6 +7,7 @@ Photo Brush Studio project using C# and GDI+ in 4.0 framework envirement in Wind
 - Microsoft Visual Studio 2010 or newer
 - Microsoft Framework 4.0 version
 - Microsoft Windows Operating System Vista/7/8 or newer
+- Dowmload this demo dll Libraries are **Required** to run, they are 'SourceLibrary.dll' & 'SourceGrid2.dll' from [here](http://www.codeproject.com/KB/GDI-plus/Image_Processing_Lab/iplab_demo.zip) and attache them to project.
 
 ## Design Patterns
 - Singleton
@@ -30,7 +31,7 @@ Photo Brush Studio project used techniques
 Photo Brush Studio project licensed under [MIT](http://opensource.org/licenses/MIT) license.
 
 ## Acknowledgements
-Many thanks to [AForge. NET Framework](http://www.aforgenet.com/) for their support on Filter and many libraries as well as [Code Project](http://www.codeproject.com), [C Sharp Corner](http://www.c-sharpcorner.com/), and Microsoft.
+Many thanks to [AForge. NET Framework](http://www.aforgenet.com/) for their support on Filter and many libraries as well as [Code Project](http://www.codeproject.com), [C Sharp Corner](http://www.c-sharpcorner.com/), and Microsoft. special thanks for [Andrew Kirillov](http://www.codeproject.com/Members/Andrew-Kirillov) for awesome articles.
 
 ## About
 This project is the result of our graduation project for the bachelor’s degree in Information Technology engineering at Faculty of Engineering at the University Of Kalamoon - Syria.
