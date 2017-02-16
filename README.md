@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tarek-aec/PhotoBrushProject.svg?branch=master)](https://travis-ci.org/tarek-aec)
+
 # Photo Brush Studio Project 
 ![PhotoBrush L](PhotoBrushProject/Resources/icon_128.png "PhotoBrushStudio")
 
